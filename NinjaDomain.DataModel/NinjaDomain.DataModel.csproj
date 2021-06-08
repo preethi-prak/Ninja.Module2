@@ -56,6 +56,10 @@
     <Compile Include="Migrations\202106081407494_InitialMigration.designer.cs">
       <DependentUpon>202106081407494_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106081432388_Added DOB.cs" />
+    <Compile Include="Migrations\202106081432388_Added DOB.designer.cs">
+      <DependentUpon>202106081432388_Added DOB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -72,6 +76,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202106081407494_InitialMigration.resx">
       <DependentUpon>202106081407494_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106081432388_Added DOB.resx">
+      <DependentUpon>202106081432388_Added DOB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

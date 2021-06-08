@@ -2,6 +2,7 @@
 using NinjaDomain.Classes.Enums;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System;
 
 namespace NinjaDomain.Classes
 {
@@ -13,6 +14,7 @@ namespace NinjaDomain.Classes
         public Clan Clan { get; set; }
         public int ClanId { get; set; }
         public List<NinjaEquipment> EquipmentOwned { get; set; }
+        public DateTime DOB { get; set; }
     }
 
     public class Clan
