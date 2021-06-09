@@ -17,7 +17,45 @@ namespace NinjaConsoleApp
             //InsertNinja();
             //InsertMultipleNinjas();
             //InsertNinjaWithEquipment();
-            SimpleNinjaQueries();
+            //SimpleNinjaQueries();
+            //QueryAndUpdateNinja();
+            QueryAndUpdateNinjaDisconnected();
+
+        }
+
+        private static void QueryAndUpdateNinjaDisconnected()
+        {
+            //In this scenario we emulate situation similar to a web application call
+            Ninja n; 
+            using(var c = new NinjaContext())
+            {
+                c.Database.Log = Console.WriteLine;
+                n = c.Ninjas.FirstOrDefault();
+                 
+            }
+            n.ServedInOniwaban = (!n.ServedInOniwaban);
+            
+            using (var c = new NinjaContext())
+            {
+                c.Database.Log = Console.WriteLine;
+                c.Ninjas.Attach(n);
+                c.Entry(n).State = EntityState.Modified;
+                c.SaveChanges();
+
+            }
+
+
+        }
+
+        private static void QueryAndUpdateNinja()
+        {
+            using(var ctx = new NinjaContext())
+            {
+                ctx.Database.Log = Console.WriteLine;
+                var q1 = ctx.Ninjas.FirstOrDefault();
+                q1.ServedInOniwaban = (!q1.ServedInOniwaban);
+                ctx.SaveChanges();
+            }
         }
 
         private static void SimpleNinjaQueries()
@@ -63,8 +101,7 @@ namespace NinjaConsoleApp
 
                 Console.WriteLine(q5.Name);
             }
-         
-
+        
         }
 
         private static void InsertNinjaWithEquipment()
