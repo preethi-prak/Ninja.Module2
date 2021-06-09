@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDMXfromDB", "EDMXfromDB\ED
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeModel", "CodeModel\CodeModel.csproj", "{90CA7906-74E3-475E-89F2-07B711EA06E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinjaConsoleApp", "NinjaConsoleApp\NinjaConsoleApp.csproj", "{69E115CC-7EFC-46FF-B55E-799F5F851C03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{90CA7906-74E3-475E-89F2-07B711EA06E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90CA7906-74E3-475E-89F2-07B711EA06E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90CA7906-74E3-475E-89F2-07B711EA06E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69E115CC-7EFC-46FF-B55E-799F5F851C03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69E115CC-7EFC-46FF-B55E-799F5F851C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69E115CC-7EFC-46FF-B55E-799F5F851C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69E115CC-7EFC-46FF-B55E-799F5F851C03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
