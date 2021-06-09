@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="52939f855b524a71af6aa9e53a53d4d2" Name="Diagram1">
+        <EntityTypeShape EntityType="BikeStoresModel.brand" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeStoresModel.category" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeStoresModel.customer" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeStoresModel.order" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeStoresModel.staff" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeStoresModel.store" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BikeStoresModel.vw_CustomerData" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="BikeStoresModel.FK__orders__customer__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeStoresModel.FK__orders__staff_id__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeStoresModel.FK__orders__store_id__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeStoresModel.FK__staffs__manager___31EC6D26" ManuallyRouted="false" />
+        <AssociationConnector Association="BikeStoresModel.FK__staffs__store_id__30F848ED" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
